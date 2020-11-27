@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5F4D92E25719D2F00B35E0C /* IOTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4D92D25719D2F00B35E0C /* IOTApp.swift */; };
+		B5F4D93025719D2F00B35E0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4D92F25719D2F00B35E0C /* ContentView.swift */; };
+		B5F4D93225719D3200B35E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F4D93125719D3200B35E0C /* Assets.xcassets */; };
+		B5F4D93525719D3200B35E0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F4D93425719D3200B35E0C /* Preview Assets.xcassets */; };
+		B5F4D94025719D3200B35E0C /* IOTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4D93F25719D3200B35E0C /* IOTTests.swift */; };
+		B5F4D94B25719D3200B35E0C /* IOTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4D94A25719D3200B35E0C /* IOTUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5F4D93C25719D3200B35E0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5F4D92225719D2F00B35E0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5F4D92925719D2F00B35E0C;
+			remoteInfo = IOT;
+		};
+		B5F4D94725719D3200B35E0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5F4D92225719D2F00B35E0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5F4D92925719D2F00B35E0C;
+			remoteInfo = IOT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5F4D92A25719D2F00B35E0C /* IOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F4D92D25719D2F00B35E0C /* IOTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTApp.swift; sourceTree = "<group>"; };
+		B5F4D92F25719D2F00B35E0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5F4D93125719D3200B35E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5F4D93425719D3200B35E0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5F4D93625719D3200B35E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F4D93B25719D3200B35E0C /* IOTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F4D93F25719D3200B35E0C /* IOTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTTests.swift; sourceTree = "<group>"; };
+		B5F4D94125719D3200B35E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F4D94625719D3200B35E0C /* IOTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F4D94A25719D3200B35E0C /* IOTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTUITests.swift; sourceTree = "<group>"; };
+		B5F4D94C25719D3200B35E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5F4D92725719D2F00B35E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F4D93825719D3200B35E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F4D94325719D3200B35E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5F4D92125719D2F00B35E0C = {
+			isa = PBXGroup;
+			children = (
+				B5F4D92C25719D2F00B35E0C /* IOT */,
+				B5F4D93E25719D3200B35E0C /* IOTTests */,
+				B5F4D94925719D3200B35E0C /* IOTUITests */,
+				B5F4D92B25719D2F00B35E0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5F4D92B25719D2F00B35E0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4D92A25719D2F00B35E0C /* IOT.app */,
+				B5F4D93B25719D3200B35E0C /* IOTTests.xctest */,
+				B5F4D94625719D3200B35E0C /* IOTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5F4D92C25719D2F00B35E0C /* IOT */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4D92D25719D2F00B35E0C /* IOTApp.swift */,
+				B5F4D92F25719D2F00B35E0C /* ContentView.swift */,
+				B5F4D93125719D3200B35E0C /* Assets.xcassets */,
+				B5F4D93625719D3200B35E0C /* Info.plist */,
+				B5F4D93325719D3200B35E0C /* Preview Content */,
+			);
+			path = IOT;
+			sourceTree = "<group>";
+		};
+		B5F4D93325719D3200B35E0C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4D93425719D3200B35E0C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5F4D93E25719D3200B35E0C /* IOTTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4D93F25719D3200B35E0C /* IOTTests.swift */,
+				B5F4D94125719D3200B35E0C /* Info.plist */,
+			);
+			path = IOTTests;
+			sourceTree = "<group>";
+		};
+		B5F4D94925719D3200B35E0C /* IOTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4D94A25719D3200B35E0C /* IOTUITests.swift */,
+				B5F4D94C25719D3200B35E0C /* Info.plist */,
+			);
+			path = IOTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5F4D92925719D2F00B35E0C /* IOT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F4D94F25719D3200B35E0C /* Build configuration list for PBXNativeTarget "IOT" */;
+			buildPhases = (
+				B5F4D92625719D2F00B35E0C /* Sources */,
+				B5F4D92725719D2F00B35E0C /* Frameworks */,
+				B5F4D92825719D2F00B35E0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOT;
+			productName = IOT;
+			productReference = B5F4D92A25719D2F00B35E0C /* IOT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5F4D93A25719D3200B35E0C /* IOTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F4D95225719D3200B35E0C /* Build configuration list for PBXNativeTarget "IOTTests" */;
+			buildPhases = (
+				B5F4D93725719D3200B35E0C /* Sources */,
+				B5F4D93825719D3200B35E0C /* Frameworks */,
+				B5F4D93925719D3200B35E0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5F4D93D25719D3200B35E0C /* PBXTargetDependency */,
+			);
+			name = IOTTests;
+			productName = IOTTests;
+			productReference = B5F4D93B25719D3200B35E0C /* IOTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5F4D94525719D3200B35E0C /* IOTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F4D95525719D3200B35E0C /* Build configuration list for PBXNativeTarget "IOTUITests" */;
+			buildPhases = (
+				B5F4D94225719D3200B35E0C /* Sources */,
+				B5F4D94325719D3200B35E0C /* Frameworks */,
+				B5F4D94425719D3200B35E0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5F4D94825719D3200B35E0C /* PBXTargetDependency */,
+			);
+			name = IOTUITests;
+			productName = IOTUITests;
+			productReference = B5F4D94625719D3200B35E0C /* IOTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5F4D92225719D2F00B35E0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B5F4D92925719D2F00B35E0C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B5F4D93A25719D3200B35E0C = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B5F4D92925719D2F00B35E0C;
+					};
+					B5F4D94525719D3200B35E0C = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B5F4D92925719D2F00B35E0C;
+					};
+				};
+			};
+			buildConfigurationList = B5F4D92525719D2F00B35E0C /* Build configuration list for PBXProject "IOT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5F4D92125719D2F00B35E0C;
+			productRefGroup = B5F4D92B25719D2F00B35E0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5F4D92925719D2F00B35E0C /* IOT */,
+				B5F4D93A25719D3200B35E0C /* IOTTests */,
+				B5F4D94525719D3200B35E0C /* IOTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5F4D92825719D2F00B35E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F4D93525719D3200B35E0C /* Preview Assets.xcassets in Resources */,
+				B5F4D93225719D3200B35E0C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F4D93925719D3200B35E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F4D94425719D3200B35E0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5F4D92625719D2F00B35E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F4D93025719D2F00B35E0C /* ContentView.swift in Sources */,
+				B5F4D92E25719D2F00B35E0C /* IOTApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F4D93725719D3200B35E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F4D94025719D3200B35E0C /* IOTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F4D94225719D3200B35E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F4D94B25719D3200B35E0C /* IOTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5F4D93D25719D3200B35E0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5F4D92925719D2F00B35E0C /* IOT */;
+			targetProxy = B5F4D93C25719D3200B35E0C /* PBXContainerItemProxy */;
+		};
+		B5F4D94825719D3200B35E0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5F4D92925719D2F00B35E0C /* IOT */;
+			targetProxy = B5F4D94725719D3200B35E0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B5F4D94D25719D3200B35E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5F4D94E25719D3200B35E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5F4D95025719D3200B35E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"IOT/Preview Content\"";
+				DEVELOPMENT_TEAM = 63JS75B35S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = IOT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.IOT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5F4D95125719D3200B35E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"IOT/Preview Content\"";
+				DEVELOPMENT_TEAM = 63JS75B35S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = IOT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.IOT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5F4D95325719D3200B35E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IOTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.IOTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOT.app/IOT";
+			};
+			name = Debug;
+		};
+		B5F4D95425719D3200B35E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IOTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.IOTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOT.app/IOT";
+			};
+			name = Release;
+		};
+		B5F4D95625719D3200B35E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IOTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.IOTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IOT;
+			};
+			name = Debug;
+		};
+		B5F4D95725719D3200B35E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IOTUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.IOTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IOT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5F4D92525719D2F00B35E0C /* Build configuration list for PBXProject "IOT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F4D94D25719D3200B35E0C /* Debug */,
+				B5F4D94E25719D3200B35E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F4D94F25719D3200B35E0C /* Build configuration list for PBXNativeTarget "IOT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F4D95025719D3200B35E0C /* Debug */,
+				B5F4D95125719D3200B35E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F4D95225719D3200B35E0C /* Build configuration list for PBXNativeTarget "IOTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F4D95325719D3200B35E0C /* Debug */,
+				B5F4D95425719D3200B35E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F4D95525719D3200B35E0C /* Build configuration list for PBXNativeTarget "IOTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F4D95625719D3200B35E0C /* Debug */,
+				B5F4D95725719D3200B35E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5F4D92225719D2F00B35E0C /* Project object */;
+}
