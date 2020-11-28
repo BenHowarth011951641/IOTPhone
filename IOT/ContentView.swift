@@ -20,7 +20,7 @@ struct LEDColor {
     
     private func sendRequest() {
         // Create URL
-        let url = URL(string: "http://192.168.248.35:8000/" + String(self.color))
+        let url = URL(string: "http://192.168.248.169:8080/" + String(self.color))
         guard let requestUrl = url else { fatalError() }
 
         // Create URL Request
