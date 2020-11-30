@@ -8,19 +8,50 @@
 import SwiftUI
 
 struct LEDColor {
-    private var color: Int = -1
+    private var color: Color = Color.white
+    private var enabled: Bool = true
 
-    func getColorText() -> String {
-        if self.color <= 0 {
-            return "OFF"
-        } else {
+    func getEnableText() -> String {
+        if self.enabled {
             return "ON"
+        } else {
+            return "OFF"
+        }
+    }
+    
+    func getColorText() -> String {
+        if self.enabled {
+            let colorString = "\(color)"
+            let colorArray: [String] = colorString.components(separatedBy: " ")
+
+            if colorArray.count > 1 {
+                var r: CGFloat = CGFloat((Float(colorArray[1]) ?? 1))
+                var g: CGFloat = CGFloat((Float(colorArray[2]) ?? 1))
+                var b: CGFloat = CGFloat((Float(colorArray[3]) ?? 1))
+
+                if (r < 0.0) {r = 0.0}
+                if (g < 0.0) {g = 0.0}
+                if (b < 0.0) {b = 0.0}
+
+                if (r > 1.0) {r = 1.0}
+                if (g > 1.0) {g = 1.0}
+                if (b > 1.0) {b = 1.0}
+
+                // Update UIColor
+                // Update hex
+                let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
+                return String(format: "%06X", rgb)
+            } else {
+                return "FFFFFF"
+            }
+        } else {
+            return "000000"
         }
     }
     
     private func sendRequest() {
         // Create URL
-        let url = URL(string: "http://192.168.248.169:8080/" + String(self.color))
+        let url = URL(string: "http://192.168.248.169:8080/" + String(self.getColorText()))
         guard let requestUrl = url else { fatalError() }
 
         // Create URL Request
@@ -51,57 +82,72 @@ struct LEDColor {
         }
         task.resume()    }
     
-    mutating func setColor(c: Int) {
+    mutating func setEnabled(e: Bool) {
+        self.enabled = e
+        
+        sendRequest()
+    }
+
+    mutating func setColor(c: Color) {
         self.color = c
+        
+        print(self.color)
         
         sendRequest()
     }
 
     init() {
-        self.color = -1
+        self.color = Color.white
+        self.enabled = true
     }
 }
 
 struct ContentView: View {
     
-    @State var color = LEDColor()
+    @State private var color = LEDColor()
+    @State private var selectedColor = Color.white
     
     var body: some View {
         VStack {
+            ColorPicker("Select Color", selection: $selectedColor)
+                .onChange(of: selectedColor) { newValue in
+                    self.color.setColor(c: newValue)}
             VStack {
-                HStack {
-                    Text("LED Light Controller ")
-                        .font(.title2)
-                        .fontWeight(.black)
-                        .foregroundColor(Color.white)
-                            .padding()
-                    Text(self.color.getColorText())
-                        .font(.title2)
-                        .fontWeight(.black)
-                        .foregroundColor(Color.white)
-                            .padding()
-                }
-                HStack {
-                    Button(action: {
-                        print("ON Button Pressed!")
-                        self.color.setColor(c: 255)
-                    }) {
-                        Text("ON")
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.red)
+                VStack {
+                    HStack {
+                        Text("LED Light Controller ")
+                            .font(.title2)
+                            .fontWeight(.black)
+                            .foregroundColor(Color.white)
+                                .padding()
+                        Text(self.color.getColorText())
+                            .font(.title2)
+                            .fontWeight(.black)
+                            .foregroundColor(Color.white)
+                                .padding()
                     }
-                    .padding(.all)
-                    .border(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                    Button(action: {
-                        print("OFF Button Pressed!")
-                        self.color.setColor(c: -1)
-                    }) {
-                        Text("OFF")
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.red)
+                    HStack {
+                        Button(action: {
+                            print("ON Button Pressed!")
+                            self.color.setEnabled(e: true)
+                        }) {
+                            Text("ON")
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color.red)
+                        }
+                        .padding(.all)
+                        .border(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                        Button(action: {
+                            print("OFF Button Pressed!")
+                            self.color.setEnabled(e: false)
+                        }) {
+                            Text("OFF")
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color.red)
+                        }
+                        .padding(.all)
+                        .border(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                     }
-                    .padding(.all)
-                    .border(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                 }
             }
         }
