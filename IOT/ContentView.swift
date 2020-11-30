@@ -110,8 +110,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ColorPicker("Select Color", selection: $selectedColor)
+                .padding([.leading, .bottom, .trailing], 25.0)
                 .onChange(of: selectedColor) { newValue in
                     self.color.setColor(c: newValue)}
+                .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                .scaleEffect(CGSize(width: 10, height: 10))
+                .labelsHidden()
             VStack {
                 VStack {
                     HStack {
@@ -120,7 +124,7 @@ struct ContentView: View {
                             .fontWeight(.black)
                             .foregroundColor(Color.white)
                                 .padding()
-                        Text(self.color.getColorText())
+                        Text(self.color.getEnableText())
                             .font(.title2)
                             .fontWeight(.black)
                             .foregroundColor(Color.white)
